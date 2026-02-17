@@ -1,0 +1,78 @@
+---
+title: Create Phone Call
+api: POST /v2/call/phone
+description: Create a real-time outbound phone call using Agni voice infrastructure.
+---
+
+Creates a new outbound phone call using Agni's voice AI engine with sub-300ms latency.
+
+## Endpoint
+```
+POST https://api.ravan.ai/v2/call/phone
+```
+
+## Headers
+
+<ParamField header="Authorization" type="string" required>
+Bearer API_KEY
+</ParamField>
+
+<ParamField header="Content-Type" type="string" required>
+application/json
+</ParamField>
+
+## Body Parameters
+
+<ParamField body="to" type="string" required>
+Destination phone number in E.164 format. Example: +919876543210
+</ParamField>
+
+<ParamField body="from" type="string" required>
+Your registered Agni phone number.
+</ParamField>
+
+<ParamField body="agent_id" type="string" required>
+ID of the Voice Agent handling this call.
+</ParamField>
+
+<ParamField body="metadata" type="object">
+Optional metadata attached to the call session.
+</ParamField>
+
+## Response
+
+<ResponseField name="id" type="string">
+Unique identifier for the created call.
+</ResponseField>
+
+<ResponseField name="status" type="string">
+Current call status (queued, ringing, in_progress, completed).
+</ResponseField>
+
+<ResponseField name="to" type="string">
+Destination phone number.
+</ResponseField>
+
+<ResponseField name="from" type="string">
+Source phone number.
+</ResponseField>
+
+<ResponseField name="created_at" type="string">
+ISO timestamp when the call was created.
+</ResponseField>
+
+## Example Response
+
+<ResponseExample>
+```json
+{
+  "id": "call_8f39a2d1",
+  "status": "queued",
+  "to": "+919876543210",
+  "from": "+918888888888",
+  "agent_id": "agent_92kd82",
+  "latency_ms": 187,
+  "created_at": "2026-02-13T14:21:33Z"
+}
+```
+</ResponseExample>

@@ -8,115 +8,244 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
               "quickstart",
               "development"
             ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
           }
         ]
       },
+
       {
-        "tab": "API reference",
+        "tab": "API Reference",
         "groups": [
+
           {
-            "group": "API documentation",
+            "group": "Introduction",
             "pages": [
               "api-reference/introduction"
             ]
           },
+
           {
-            "group": "Endpoint examples",
+            "group": "Call (V2)",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/call/create-phone-call",
+              "api-reference/call/create-web-call",
+              "api-reference/call/get-call",
+              "api-reference/call/list-calls",
+              "api-reference/call/update-call",
+              "api-reference/call/delete-call"
+            ]
+          },
+
+          {
+            "group": "Chat",
+            "pages": [
+              "api-reference/chat/create-chat",
+              "api-reference/chat/create-outbound-sms",
+              "api-reference/chat/get-chat",
+              "api-reference/chat/create-chat-completion",
+              "api-reference/chat/list-chat",
+              "api-reference/chat/update-chat",
+              "api-reference/chat/end-chat"
+            ]
+          },
+
+          {
+            "group": "Phone Number",
+            "pages": [
+              "api-reference/phone-number/create",
+              "api-reference/phone-number/get",
+              "api-reference/phone-number/list",
+              "api-reference/phone-number/update",
+              "api-reference/phone-number/delete"
+            ]
+          },
+
+          {
+            "group": "Voice Agent",
+            "pages": [
+              "api-reference/voice-agent/create",
+              "api-reference/voice-agent/get",
+              "api-reference/voice-agent/list",
+              "api-reference/voice-agent/update",
+              "api-reference/voice-agent/delete",
+              "api-reference/voice-agent/publish",
+              "api-reference/voice-agent/versions"
+            ]
+          },
+
+          {
+            "group": "Chat Agent",
+            "pages": [
+              "api-reference/chat-agent/create",
+              "api-reference/chat-agent/get",
+              "api-reference/chat-agent/list",
+              "api-reference/chat-agent/update",
+              "api-reference/chat-agent/delete",
+              "api-reference/chat-agent/publish",
+              "api-reference/chat-agent/versions"
+            ]
+          },
+
+          {
+            "group": "Retell LLM",
+            "pages": [
+              "api-reference/llm/create",
+              "api-reference/llm/get",
+              "api-reference/llm/list",
+              "api-reference/llm/update",
+              "api-reference/llm/delete"
+            ]
+          },
+
+          {
+            "group": "Conversation Flow",
+            "pages": [
+              "api-reference/conv-flow/create",
+              "api-reference/conv-flow/get",
+              "api-reference/conv-flow/list",
+              "api-reference/conv-flow/update",
+              "api-reference/conv-flow/delete"
+            ]
+          },
+
+          {
+            "group": "Conversation Flow Components",
+            "pages": [
+              "api-reference/conv-flow/components/create",
+              "api-reference/conv-flow/components/get",
+              "api-reference/conv-flow/components/list",
+              "api-reference/conv-flow/components/update",
+              "api-reference/conv-flow/components/delete"
+            ]
+          },
+
+          {
+            "group": "MCP Tool",
+            "pages": [
+              "api-reference/mcp/get-tools"
+            ]
+          },
+
+          {
+            "group": "Knowledge Base",
+            "pages": [
+              "api-reference/knowledge-base/create",
+              "api-reference/knowledge-base/get",
+              "api-reference/knowledge-base/list",
+              "api-reference/knowledge-base/delete",
+              "api-reference/knowledge-base/add-sources",
+              "api-reference/knowledge-base/delete-source"
+            ]
+          },
+
+          {
+            "group": "Voice",
+            "pages": [
+              "api-reference/voice/add",
+              "api-reference/voice/clone",
+              "api-reference/voice/search",
+              "api-reference/voice/get",
+              "api-reference/voice/list"
+            ]
+          },
+
+          {
+            "group": "Batch Call",
+            "pages": [
+              "api-reference/batch-call/create"
+            ]
+          },
+
+          {
+            "group": "Testing - Test Cases",
+            "pages": [
+              "api-reference/testing/cases/create",
+              "api-reference/testing/cases/get",
+              "api-reference/testing/cases/list",
+              "api-reference/testing/cases/update",
+              "api-reference/testing/cases/delete"
+            ]
+          },
+
+          {
+            "group": "Testing - Batch Tests",
+            "pages": [
+              "api-reference/testing/batches/create",
+              "api-reference/testing/batches/get",
+              "api-reference/testing/batches/list"
+            ]
+          },
+
+          {
+            "group": "Testing - Test Runs",
+            "pages": [
+              "api-reference/testing/runs/get",
+              "api-reference/testing/runs/list"
+            ]
+          },
+
+          {
+            "group": "Account",
+            "pages": [
+              "api-reference/account/concurrency"
+            ]
+          },
+
+          {
+            "group": "Custom Telephony",
+            "pages": [
+              "api-reference/telephony/import-number",
+              "api-reference/telephony/register-call"
+            ]
+          },
+
+          {
+            "group": "Custom LLM",
+            "pages": [
+              "api-reference/custom-llm/websocket"
             ]
           }
+
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
+
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@agni.ai"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://dashboard.agni.ai"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
-  },
+
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/your-org",
+      "linkedin": "https://linkedin.com/company/your-org"
     }
   }
 }
